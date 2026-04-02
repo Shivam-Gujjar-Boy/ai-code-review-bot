@@ -1,0 +1,35 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "React frontend for AI Code Review Bot",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@codemirror/lang-javascript": "latest",
+    "@codemirror/lang-python": "latest",
+    "@codemirror/lang-html": "latest",
+    "@codemirror/lang-css": "latest",
+    "@codemirror/lang-json": "latest",
+    "@codemirror/lang-xml": "latest",
+    "@codemirror/lang-java": "latest",
+    "@codemirror/lang-rust": "latest",
+    "@codemirror/lang-cpp": "latest",
+    "@uiw/react-codemirror": "^4.21.0",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.1.0",
+    "@vitejs/plugin-react": "^4.3.0"
+  }
+}

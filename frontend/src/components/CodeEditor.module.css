@@ -1,0 +1,85 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(8, 17, 31, 0.9);
+}
+
+.languageSelector {
+  padding: 0.55rem 1rem;
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.languageSelector label {
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.select {
+  padding: 0.3rem 0.6rem;
+  background: rgba(8, 17, 31, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  color: #e2e8f0;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.select:hover {
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+.select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.codemirror {
+  flex: 1;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.5;
+  background: rgba(8, 17, 31, 0.96);
+}
+
+.codemirror :global(.cm-editor) {
+  background: rgba(8, 17, 31, 0.96);
+  color: #e2e8f0;
+  height: 100%;
+}
+
+.codemirror :global(.cm-gutters) {
+  background: rgba(15, 23, 42, 0.96);
+  border-right: 1px solid rgba(148, 163, 184, 0.12);
+  color: #64748b;
+}
+
+.codemirror :global(.cm-linenumber) {
+  color: #64748b;
+  padding-right: 0.5rem;
+}
+
+.codemirror :global(.cm-activeLine) {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.codemirror :global(.cm-cursor) {
+  border-left-color: #3b82f6;
+}
+
+.codemirror :global(.cm-selection) {
+  background: rgba(59, 130, 246, 0.24);
+}

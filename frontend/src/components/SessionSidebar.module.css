@@ -1,0 +1,225 @@
+.sidebar {
+  width: 280px;
+  min-width: 260px;
+  max-width: 420px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.98) 0%, rgba(17, 24, 39, 0.98) 100%);
+  border-right: 1px solid rgba(148, 163, 184, 0.14);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 8px 0 30px rgba(15, 23, 42, 0.24);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.15rem 1rem 1rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.header p {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #94a3b8;
+}
+
+.countPill {
+  min-width: 2.25rem;
+  height: 2rem;
+  padding: 0 0.65rem;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  color: #bfdbfe;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.emptyIcon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.16);
+  margin-bottom: 0.9rem;
+}
+
+.empty p {
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.empty span {
+  font-size: 0.875rem;
+  opacity: 0.82;
+  line-height: 1.45;
+}
+
+.sessionList {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  gap: 0.75rem;
+}
+
+.sessionItem {
+  display: flex;
+  gap: 0.6rem;
+  align-items: stretch;
+}
+
+.sessionContent {
+  flex: 1;
+  padding: 0.95rem;
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.88) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.18);
+}
+
+.sessionContent:hover {
+  transform: translateY(-1px);
+  border-color: rgba(96, 165, 250, 0.32);
+  box-shadow: 0 16px 30px rgba(2, 6, 23, 0.26);
+}
+
+.sessionContent:active {
+  transform: translateY(0);
+}
+
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.sessionMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.language {
+  padding: 0.3rem 0.6rem;
+  background: rgba(59, 130, 246, 0.14);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  border-radius: 999px;
+  width: fit-content;
+  color: #bfdbfe;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #64748b;
+}
+
+.sessionTitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.score {
+  min-width: 2.75rem;
+  padding: 0.35rem 0.55rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(37, 99, 235, 0.26));
+  border-radius: 999px;
+  color: #dbeafe;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.deleteBtn {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(248, 113, 113, 0.18);
+  border-radius: 14px;
+  color: #f87171;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  background: rgba(239, 68, 68, 0.14);
+  color: #fecaca;
+  border-color: rgba(248, 113, 113, 0.42);
+  transform: translateY(-1px);
+}
+
+/* Scrollbar styling */
+.content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
